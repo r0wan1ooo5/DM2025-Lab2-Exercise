@@ -1,0 +1,212 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">example_application</span> <span class="lx-label" style="background-color:#C8E6C9;">key_concept</span> <span class="lx-label" style="background-color:#FEF0C3;">practical_insight</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        # LECTURE ANALYSIS: How Difficult to Train LLM
+## Video Segment: 68:42
+
+[SLIDE DESCRIPTION]
+The slide shows a screenshot of a website with the text &quot;audreyt /CKIP-LLAMA-2-7b-chat-GGUF&quot; and &quot;uggingface.co&quot;. There is also text in Chinese and &quot;Yi-Shin Chan, Text Mining&quot; at the bottom. The slide number is 151.
+
+[TRANSCRIPT - 68:42]
+example, I hope that the professor Du Na Mai, it is from Academia Sinica. Around that time, Academia Sinica have five teams, so they fine tune the Llama. They try to fine tune some model and then they fine tune from the <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Llama. Okay, Llama actually is large language model from Facebook.</span> Recently, yesterday, I checked the news. They say Facebook, Meta are not happy about their large language model progress, so they fire all the big guys. Do you know who is Yann LeCun? The one to CNN. The one to Facebook. The one to important person from their team. They fire Yann LeCun. The one to CNN. Okay, they fire all the big guys. Say, you guys are bad. So they recruit a young scientist and then that young scientist actually just fire all the people.
+
+[TRANSCRIPT - 69:32]
+But then let me try to show something to you. Sometimes when we say certain thing is not bad, is not good, probably is they do have in the social society good, but <span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">fine</span>. So then, this one before, <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">around like two years ago, we have a CKIP, they based on the Llama 2 and then they try to fine tune with the traditional Chinese character.</span> And then that time, our minister of the digital department, something like that. She&#x27;s very happy about that and try to share.
+
+[SLIDE DESCRIPTION]
+The slide shows a screenshot of a website with Chinese text and a logo that appears to be from Academia Sinica. There are input fields labeled &quot;Input Text&quot; and &quot;Output&quot;, and a slider labeled &quot;top_p&quot;. The text &quot;CKIP-LLAMA-2-7b-chat&quot; is visible.
+
+[TRANSCRIPT - 69:52]
+And then they try to fine tune with the traditional Chinese character. And then that time, our minister of the digital department, something like that. She&#x27;s very happy about that and try to share. And then after that, they want to hugging face. Okay, so this one come from Academia Sinica, I&#x27;m sorry, is in mentoring because they are the interface are in mentoring. <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">And then they find out some people just go there and type the prompt saying that what is your country? And then they say output is China. Oh, so many people got so angry. So in the end, does the Academia Sinica, and so who is your inventor? Say, oh, my inventor actually come from Fudan University, blah, blah, blah, blah.</span>
+
+[TRANSCRIPT - 70:42]
+Okay. And then afterward, it become a chaos in political way. And even the Academia Sinica actually talking about what they did. So for example, this is from the team, say what we did, we actually collect the information and then we get certain information and convert them to the mentoring data. And of course, if the data itself contain that information, it would look like something that. So even Academia Sinica actually needs response to it, saying that, oh, that is not ties. This one is certain thing. So sorry, we don&#x27;t actually try to involve the political part. <span class="lx-highlight" data-idx="4" style="background-color:#FEF0C3;">So then later on when the ties starting to working on their part, they are very, very careful. They&#x27;re having something like human annotator and try to do the reinforcement learning, try to do the double check that our train model do not output the information saying, oh, I come from China. They definitely need to say, hey, I come from Taiwan.</span>
+
+[TRANSCRIPT - 71:42]
+<span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">That is very difficult to train LLM.</span> So, I myself don&#x27;t want to join this competition. But if you are rich enough, your father or family actually have a huge inheritance, welcome.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="5" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/6</span> |
+          Pos <span id="posInfo">[550-616]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "key_concept", "text": "Llama. Okay, Llama actually is large language model from Facebook.", "color": "#C8E6C9", "startPos": 550, "endPos": 616, "beforeText": "ca. Around that time, Academia Sinica have five teams, so they fine tune the Llama. They try to fine tune some model and then they fine tune from the ", "extractionText": "Llama. Okay, Llama actually is large language model from Facebook.", "afterText": " Recently, yesterday, I checked the news. They say Facebook, Meta are not happy about their large language model progress, so they fire all the big gu", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Llama</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A large language model from Facebook.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Llama is a type of AI model developed by Facebook (Meta) that can understand and generate human-like text.</span>}</div>"}, {"index": 1, "class": "key_concept", "text": "fine tune", "color": "#C8E6C9", "startPos": 1263, "endPos": 1267, "beforeText": "e try to show something to you. Sometimes when we say certain thing is not bad, is not good, probably is they do have in the social society good, but ", "extractionText": "fine", "afterText": ". So then, this one before, around like two years ago, we have a CKIP, they based on the Llama 2 and then they try to fine tune with the traditional C", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Fine-tuning</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The process of taking a pre-trained model and further training it on a specific dataset or task to adapt it to a particular need.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Fine-tuning is like giving a general-purpose AI model specialized training so it becomes better at a specific job, like understanding a particular language or style.</span>}</div>"}, {"index": 2, "class": "example_application", "text": "around like two years ago, we have a CKIP, they based on the Llama 2 and then they try to fine tune with the traditional Chinese character.", "color": "#D2E3FC", "startPos": 1295, "endPos": 1434, "beforeText": "Sometimes when we say certain thing is not bad, is not good, probably is they do have in the social society good, but fine. So then, this one before, ", "extractionText": "around like two years ago, we have a CKIP, they based on the Llama 2 and then they try to fine tune with the traditional Chinese character.", "afterText": " And then that time, our minister of the digital department, something like that. She&#x27;s very happy about that and try to share.\n\n[SLIDE DESCRIPTION]\nT", "attributesHtml": "<div><strong>class:</strong> example_application</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">example_title</span>: <span class=\"lx-attr-value\">Fine-tuning Llama 2 for Traditional Chinese</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Fine-tuning</span>, <span class=\"lx-attr-key\">real_world_domain</span>: <span class=\"lx-attr-value\">Natural Language Processing / AI Model Adaptation</span>, <span class=\"lx-attr-key\">situation_description</span>: <span class=\"lx-attr-value\">A team at Academia Sinica used the Llama 2 model and fine-tuned it to work with traditional Chinese characters.</span>, <span class=\"lx-attr-key\">simplified_takeaway</span>: <span class=\"lx-attr-value\">Large language models can be adapted (fine-tuned) to perform well on specific languages or character sets, like traditional Chinese.</span>}</div>"}, {"index": 3, "class": "example_application", "text": "And then they find out some people just go there and type the prompt saying that what is your country? And then they say output is China. Oh, so many people got so angry. So in the end, does the Academia Sinica, and so who is your inventor? Say, oh, my inventor actually come from Fudan University, blah, blah, blah, blah.", "color": "#D2E3FC", "startPos": 2216, "endPos": 2538, "beforeText": ", they want to hugging face. Okay, so this one come from Academia Sinica, I&#x27;m sorry, is in mentoring because they are the interface are in mentoring. ", "extractionText": "And then they find out some people just go there and type the prompt saying that what is your country? And then they say output is China. Oh, so many people got so angry. So in the end, does the Academia Sinica, and so who is your inventor? Say, oh, my inventor actually come from Fudan University, blah, blah, blah, blah.", "afterText": "\n\n[TRANSCRIPT - 70:42]\nOkay. And then afterward, it become a chaos in political way. And even the Academia Sinica actually talking about what they did", "attributesHtml": "<div><strong>class:</strong> example_application</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">example_title</span>: <span class=\"lx-attr-value\">LLM outputting sensitive political information</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">LLM training data and bias</span>, <span class=\"lx-attr-key\">real_world_domain</span>: <span class=\"lx-attr-value\">AI ethics and safety</span>, <span class=\"lx-attr-key\">situation_description</span>: <span class=\"lx-attr-value\">Users prompted an LLM, which outputted &#x27;China&#x27; as its country, causing anger. When asked about its inventor, it stated it came from Fudan University.</span>, <span class=\"lx-attr-key\">simplified_takeaway</span>: <span class=\"lx-attr-value\">LLMs can inadvertently generate politically sensitive or biased outputs if their training data contains such information, leading to public backlash.</span>}</div>"}, {"index": 4, "class": "practical_insight", "text": "So then later on when the ties starting to working on their part, they are very, very careful. They're having something like human annotator and try to do the reinforcement learning, try to do the double check that our train model do not output the information saying, oh, I come from China. They definitely need to say, hey, I come from Taiwan.", "color": "#FEF0C3", "startPos": 3133, "endPos": 3478, "beforeText": "ly needs response to it, saying that, oh, that is not ties. This one is certain thing. So sorry, we don&#x27;t actually try to involve the political part. ", "extractionText": "So then later on when the ties starting to working on their part, they are very, very careful. They&#x27;re having something like human annotator and try to do the reinforcement learning, try to do the double check that our train model do not output the information saying, oh, I come from China. They definitely need to say, hey, I come from Taiwan.", "afterText": "\n\n[TRANSCRIPT - 71:42]\nThat is very difficult to train LLM. So, I myself don&#x27;t want to join this competition. But if you are rich enough, your father ", "attributesHtml": "<div><strong>class:</strong> practical_insight</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">insight_type</span>: <span class=\"lx-attr-value\">Best Practice</span>, <span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">LLM safety and alignment</span>, <span class=\"lx-attr-key\">summary_of_insight</span>: <span class=\"lx-attr-value\">To prevent biased or sensitive outputs, use human annotators and reinforcement learning to carefully review and correct LLM behavior, ensuring it aligns with desired responses (e.g., stating &#x27;Taiwan&#x27; instead of &#x27;China&#x27;).</span>}</div>"}, {"index": 5, "class": "key_concept", "text": "That is very difficult to train LLM.", "color": "#C8E6C9", "startPos": 3501, "endPos": 3537, "beforeText": " train model do not output the information saying, oh, I come from China. They definitely need to say, hey, I come from Taiwan.\n\n[TRANSCRIPT - 71:42]\n", "extractionText": "That is very difficult to train LLM.", "afterText": " So, I myself don&#x27;t want to join this competition. But if you are rich enough, your father or family actually have a huge inheritance, welcome.\n", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">LLM Training Difficulty</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Training Large Language Models (LLMs) can be very difficult, especially when dealing with sensitive or politically charged topics.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Advanced</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Making LLMs behave correctly and avoid problematic outputs, particularly on sensitive subjects, is a complex and challenging task.</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

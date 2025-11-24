@@ -1,0 +1,39 @@
+{
+    "title": "How Difficult to Train LLM",
+    "video_segment": "68:42",
+    "content_flow": [
+        {
+            "content_type": "slide_description",
+            "text": "The slide shows a screenshot of a website with the text \"audreyt /CKIP-LLAMA-2-7b-chat-GGUF\" and \"uggingface.co\". There is also text in Chinese and \"Yi-Shin Chan, Text Mining\" at the bottom. The slide number is 151."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "example, I hope that the professor Du Na Mai, it is from Academia Sinica. Around that time, Academia Sinica have five teams, so they fine tune the Llama. They try to fine tune some model and then they fine tune from the Llama. Okay, Llama actually is large language model from Facebook. Recently, yesterday, I checked the news. They say Facebook, Meta are not happy about their large language model progress, so they fire all the big guys. Do you know who is Yann LeCun? The one to CNN. The one to Facebook. The one to important person from their team. They fire Yann LeCun. The one to CNN. Okay, they fire all the big guys. Say, you guys are bad. So they recruit a young scientist and then that young scientist actually just fire all the people.",
+            "timestamp": "68:42"
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "But then let me try to show something to you. Sometimes when we say certain thing is not bad, is not good, probably is they do have in the social society good, but fine. So then, this one before, around like two years ago, we have a CKIP, they based on the Llama 2 and then they try to fine tune with the traditional Chinese character. And then that time, our minister of the digital department, something like that. She's very happy about that and try to share.",
+            "timestamp": "69:32"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "The slide shows a screenshot of a website with Chinese text and a logo that appears to be from Academia Sinica. There are input fields labeled \"Input Text\" and \"Output\", and a slider labeled \"top_p\". The text \"CKIP-LLAMA-2-7b-chat\" is visible."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "And then they try to fine tune with the traditional Chinese character. And then that time, our minister of the digital department, something like that. She's very happy about that and try to share. And then after that, they want to hugging face. Okay, so this one come from Academia Sinica, I'm sorry, is in mentoring because they are the interface are in mentoring. And then they find out some people just go there and type the prompt saying that what is your country? And then they say output is China. Oh, so many people got so angry. So in the end, does the Academia Sinica, and so who is your inventor? Say, oh, my inventor actually come from Fudan University, blah, blah, blah, blah.",
+            "timestamp": "69:52"
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "Okay. And then afterward, it become a chaos in political way. And even the Academia Sinica actually talking about what they did. So for example, this is from the team, say what we did, we actually collect the information and then we get certain information and convert them to the mentoring data. And of course, if the data itself contain that information, it would look like something that. So even Academia Sinica actually needs response to it, saying that, oh, that is not ties. This one is certain thing. So sorry, we don't actually try to involve the political part. So then later on when the ties starting to working on their part, they are very, very careful. They're having something like human annotator and try to do the reinforcement learning, try to do the double check that our train model do not output the information saying, oh, I come from China. They definitely need to say, hey, I come from Taiwan.",
+            "timestamp": "70:42"
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "That is very difficult to train LLM. So, I myself don't want to join this competition. But if you are rich enough, your father or family actually have a huge inheritance, welcome.",
+            "timestamp": "71:42"
+        }
+    ]
+}
